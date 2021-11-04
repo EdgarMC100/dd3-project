@@ -1,15 +1,15 @@
-# DD3 React Application 🛍️ ![Status badge](https://img.shields.io/badge/status-in%20progress-yellow)
+# DD3 React Application :money_with_wings::house: ![Status badge](https://img.shields.io/badge/status-in%20progress-yellow)
 
 ## Find your dream house in DD3
 
-![fakeshop_demo](https://properties-monopolio.directus.app/assets/23326090-f10c-4b29-a491-fe149cf19e6f)
+![Screen Shot 2021-11-04 at 0 24 19](https://user-images.githubusercontent.com/15788622/140267928-ab6b7455-6f3f-48fd-beff-5c6484e4c398.png)
 
 [DEMO]().
 
 ## 🚀 Installation
 1. Clone this project.
 2. Go to project directory
-`cd FakeShop`
+`cd dd3-project`
 3. Install dependencies
 `npm install`
 4. Run the local environment
@@ -19,11 +19,8 @@
 1. Una vez instsaladas las dependencias, puedes hacer el build
 `npm build:ddl && npm build`
 
-## 📚 Data base FakeShop API
-All data comes from [FakeShopApi](https://fakestoreapi.com/)
-
-## 🧾 License
-The MIT License (MIT)
+## 📚 Data base API MOCKLETS
+All data comes from [ApiMocklets](https://api.mocklets.com/p68140/rent/properties)
 
 ## 👏 Thanks
 * To my mother, wife and sweet daugther
