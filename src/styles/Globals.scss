@@ -1,0 +1,34 @@
+// $dmsans: "../";
+@use 'Variables' as v;
+@font-face {
+  font-family: dmsans;
+  src: url("../assets/fonts/dmsans/DMSans-Regular.ttf") format('truetype');
+  font-size: normal;
+  font-weight: 400;
+}
+
+// @font-face {
+//   font-family: dmsans;
+//   src: url($dmsans + "/DMSans-Italic.ttf") format('ttf');
+//   font-size: italic;
+//   font-weight: 400;
+// }
+
+// @font-face {
+//   font-family: dmsans;
+//   src: url(#{$dmsans}/DMSans-Bold.ttf) format("ttf");
+//   font-size: 700;
+//   font-weight: bold;
+// }
+
+body{
+  margin: 0;
+  font-family: dmsans;
+  font-style: normal;
+  background-color: v.$base-color;
+}
+
+.wrapper{
+  max-inline-size: 1080px;
+  margin: auto;
+}

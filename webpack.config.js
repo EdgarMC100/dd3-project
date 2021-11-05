@@ -45,14 +45,18 @@ module.exports = {
         ]
       },
       {
-        test: /\.png/,
+        test: /\.png$/,
         type: 'asset/resource',
         generator: {
           filename: 'assets/images/[hash][ext][query]'
         }
       },
       {
-        test: /\.(woff|woff2)$/,
+        test: /\.svg$/,
+        type: 'asset/inline'
+      },
+      {
+        test: /\.(woff|woff2|ttf)$/,
         type: 'asset/resource',
         generator: {
           filename: 'assets/fonts/[hash][ext][query]'

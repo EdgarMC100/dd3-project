@@ -9,7 +9,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: "/"
+    publicPath: "/",
+    assetModuleFilename: 'assets/images/[hash][ext][query]'
   },
   mode: 'development',
   resolve: {
@@ -45,14 +46,18 @@ module.exports = {
         ]
       },
       {
-        test: /\.png/,
+        test: /\.png$/,
         type: 'asset/resource',
         generator: {
           filename: 'assets/images/[hash][ext][query]'
         }
       },
       {
-        test: /\.(woff|woff2)$/,
+        test: /\.svg$/,
+        type: 'asset/inline'
+      },
+      {
+        test: /\.(woff|woff2|ttf)$/,
         //whithout loader
         type: 'asset/resource',
         generator: {
@@ -63,6 +68,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      inject: true,
       template: './public/index.html',
       filename: './index.html'
     }),

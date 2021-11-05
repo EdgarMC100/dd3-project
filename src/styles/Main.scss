@@ -1,0 +1,22 @@
+main{
+  margin-top: 60px;
+  section{
+    .section-content{
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  img.house-image{
+    width: 704px;
+    height: 520px;
+  }
+  hr{
+    width: 169px;
+    height: 4px;
+    border: none;
+    background: linear-gradient(90deg, #FFAC12 0%, #000000 94.96%);
+    margin-top: 58px;
+    margin-left: 0;
+    // background-color:  linear-gradient(90deg, #FFAC12 0%, #000000 94.96%);
+  }
+}

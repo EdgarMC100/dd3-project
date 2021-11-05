@@ -1,0 +1,40 @@
+section.details{
+  width: 704px;
+  height: 147px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 25px;
+  margin-top: 25px;
+  table{
+    width: 100%;
+    border-collapse: collapse;
+    thead{
+      text-align: left;
+      tr{
+        border-bottom: 1px solid #E4E4E4;
+        th{
+          padding: 30px 0 30px 30px;
+          font-size: 20px;
+        }
+      }
+    }
+    tbody{
+      tr{
+        td{
+          width: 140.8px;
+          text-align: center;
+          border-right: 1px solid #E4E4E4;
+          font-size: 22px;
+          &:last-of-type{
+            border-right: none;
+          }
+          img{
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}

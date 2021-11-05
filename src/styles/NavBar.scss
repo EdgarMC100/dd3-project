@@ -1,0 +1,31 @@
+.nav-bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 32px 0;
+  .nav-content{
+    display: flex;
+    flex-direction: row;
+    nav{
+      color: white;
+      ul{
+        list-style: none;
+        display: flex;
+        li{
+          margin-right:60px;
+        }
+      }
+    }
+    // button{
+    //   width: 211px;
+    //   font-size: 17px;
+    //   background-color: #FFAC12;
+    //   border: none;
+    //   border-top-right-radius: 18px;
+    //   i{
+    //     color: white;
+    //   }
+    // }
+  }
+
+}

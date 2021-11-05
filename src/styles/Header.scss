@@ -1,0 +1,12 @@
+@use 'Variables' as v;
+.header{
+  background: linear-gradient(225.52deg, rgba(39,26,0,1) 0.45%, rgba(0,0,0,0.982162) 100.47%);
+}
+header{
+  height: 228px;
+  hr.break-line{
+    height: 1px;
+    background-color: rgba(255,255,255,0.1);
+    border: none;
+  }
+}

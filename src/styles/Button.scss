@@ -1,0 +1,44 @@
+.button{
+  font-size: 17px;
+  border: none;
+  border-top-right-radius: 18px;
+}
+
+.primary{
+  background-color: #FFAC12;
+  i{
+    color: white;
+    margin-left: 19px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+}
+
+.secondary{
+  background-color: #000000;
+  color: white;
+  margin: 0px 20px;
+  text-align: center;
+  i{
+    margin-left: 19px;
+    color: #FFAC12;
+    font-weight: bold;
+    font-size: 20px;
+  }
+}
+
+.large{
+  width: 296px;
+}
+
+.small{
+  width: 211px;
+}
+
+.height-sm{
+  height: 50px;
+}
+
+.height-lg{
+  height: 70px;
+}
