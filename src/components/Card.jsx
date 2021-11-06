@@ -4,20 +4,20 @@ import bed from '@images/bed.svg'
 import slot from '@images/slot.svg'
 import cardImage from '@images/house.png'
 import shower from '@images/shower.svg'
-const Card = () => {
+const Card = ({house}) => {
   return (
     <div className="card">
-      <img className="card-image"src={cardImage} alt="" />
+      <img className="card-image" src={house.src} alt="" />
       <table>
         <thead>
-          <tr><th>Malto House</th></tr>
+          <tr><th>{house.name}</th></tr>
         </thead>
         <tbody>
           <tr>
-            <td><img src={bed} alt="" /> 4
+            <td><img src={bed} alt="" />{house.bedrooms}
             </td>
-            <td><img src={shower} alt=""/>2</td>
-            <td><img src={slot} alt=""/>2</td>
+            <td><img src={shower} alt=""/>{house.bathroom}</td>
+            <td><img src={slot} alt=""/>{house.slot}</td>
           </tr>
         </tbody>
       </table>

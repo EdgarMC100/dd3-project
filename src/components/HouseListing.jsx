@@ -3,7 +3,7 @@ import Card from './Card';
 import search from '@images/search.svg'
 import arrows from '@images/arrows.svg'
 import '@styles/HouseListing.scss'
-const HouseListing = () => {
+const HouseListing = ({houses, houseShownedIndex}) => {
   return (
       <section className="house-listing">
         <div className="filters">
@@ -21,9 +21,16 @@ const HouseListing = () => {
           </div>
         </div>
         <div className="cards">
-          <Card />
-          <Card />
-          <Card />
+          {houses.map((house, index)=>{
+            if(index == houseShownedIndex){
+              return 0;
+            }
+            return (
+              <>
+                <Card house={house}/>
+              </>
+            )
+          })}
         </div>
       </section>
   );

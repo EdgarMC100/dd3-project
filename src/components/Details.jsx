@@ -6,7 +6,7 @@ import shower from '@images/shower.svg'
 import slot from '@images/slot.svg'
 import date from '@images/date.svg'
 
-const Details = () => {
+const Details = ({houseDetail}) => {
   return (
     <section className="details">
       <table>
@@ -15,11 +15,11 @@ const Details = () => {
         </thead>
         <tbody>
           <tr>
-            <td><img src={bed} alt="bed image"/>4</td>
-            <td><img src={shower} alt="shower image"/>2</td>
-            <td><img src={slot} alt="slot image"/>2</td>
-            <td><img src={garage} alt="car garage image" />1</td>
-            <td><img src={date} alt="date image" />2007</td>
+            <td><img src={bed} alt="bed image"/>{houseDetail.bedrooms}</td>
+            <td><img src={shower} alt="shower image"/>{houseDetail.bathroom}</td>
+            <td><img src={slot} alt="slot image"/>{houseDetail.slot}</td>
+            <td><img src={garage} alt="car garage image" />{houseDetail.slot}</td>
+            <td><img src={date} alt="date image" />{houseDetail.year}</td>
           </tr>
         </tbody>
       </table>

@@ -6,19 +6,21 @@ import Details from '../components/Details';
 import Card from '../components/Card';
 import HouseListing from '../components/HouseListing';
 
-const Main = () => {
+const Main = ({houseDetail, houses,houseShownedIndex}) => {
+  console.log(houses)
+  console.log(houseDetail)
   return (
     <div className="wrapper">
       <main>
           <section>
             <div className="section-content">
-              <img className="house-image" src={house} alt="" />
+            <img className="house-image" src={houseDetail.src} alt="" />
               <ContactForm />
             </div>
           </section>
-          <Details/>
+          <Details houseDetail={houseDetail}/>
           <hr />
-          <HouseListing/>
+        <HouseListing houses={houses} houseShownedIndex={houseShownedIndex}/>
       </main>
     </div>
 
