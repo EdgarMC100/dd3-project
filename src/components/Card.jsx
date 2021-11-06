@@ -2,8 +2,8 @@ import React from 'react'
 import '@styles/Card.scss'
 import bed from '@images/bed.svg'
 import slot from '@images/slot.svg'
-import cardImage from '@images/house.png'
 import shower from '@images/shower.svg'
+
 const Card = ({house}) => {
   return (
     <div className="card">

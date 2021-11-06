@@ -17,7 +17,6 @@ const App = () => {
   })
   return (
     <div>
-      {/* {data.map((obj) => <p>{obj.name}</p>)} */}
       <Header name={houseDetail.name} cost={houseDetail.cost}/>
       <Main houseDetail={houseDetail} houses={data} houseShownedIndex={houseShownedIndex}/>
       <Footer/>

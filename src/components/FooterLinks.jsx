@@ -1,5 +1,6 @@
 import React from 'react'
 import '@styles/FooterLinks.scss'
+
 const FooterLinks = () => {
   return (
     <div className="footer-links">

@@ -18,7 +18,6 @@ const NavBar = () => {
             </ul>
           </nav>
           <Button width="small" height="height-sm" label="Work with us"/>
-          {/* <button>Work with us <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button> */}
         </div>
       </div>
 

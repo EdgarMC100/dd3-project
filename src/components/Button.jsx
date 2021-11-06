@@ -1,5 +1,6 @@
 import React from 'react'
 import '@styles/Button.scss'
+
 const Button = (props) => {
   const className = `button ${props.type} ${props.width} ${props.height}`
   return (

@@ -3,7 +3,6 @@ import ContactForm from '../components/ContactForm';
 import house from '@images/property-house.png';
 import '@styles/Main.scss'
 import Details from '../components/Details';
-import Card from '../components/Card';
 import HouseListing from '../components/HouseListing';
 
 const Main = ({houseDetail, houses,houseShownedIndex}) => {

@@ -3,6 +3,7 @@ import Card from './Card';
 import search from '@images/search.svg'
 import arrows from '@images/arrows.svg'
 import '@styles/HouseListing.scss'
+
 const HouseListing = ({houses, houseShownedIndex}) => {
   return (
       <section className="house-listing">
@@ -17,13 +18,12 @@ const HouseListing = ({houses, houseShownedIndex}) => {
               <input type="text" placeholder="Type" />
               <img src={arrows} alt="" />
             </div>
-
           </div>
         </div>
         <div className="cards">
           {houses.map((house, index)=>{
             if(index == houseShownedIndex){
-              return 0;
+              return null;
             }
             return (
               <>

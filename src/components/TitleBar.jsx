@@ -1,5 +1,6 @@
 import React from 'react'
 import '@styles/TitleBar.scss'
+
 const TitleBar = ({name,cost}) => {
   return (
     <div className="title-bar">
