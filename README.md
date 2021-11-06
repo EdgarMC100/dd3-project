@@ -4,7 +4,7 @@
 
 ![Screen Shot 2021-11-04 at 0 24 19](https://user-images.githubusercontent.com/15788622/140267928-ab6b7455-6f3f-48fd-beff-5c6484e4c398.png)
 
-[DEMO]().
+[DEMO](https://admiring-blackwell-bd0a31.netlify.app/).
 
 ## 🚀 Installation
 1. Clone this project.
