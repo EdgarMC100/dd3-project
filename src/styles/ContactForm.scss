@@ -52,8 +52,10 @@ section.contact-form{
       box-sizing: border-box;
       border-radius: 10px;
       margin: 0 20px 10px 20px;
+      font-family: dmsans;
        &::-webkit-input-placeholder{
         color: #939393;
+        font-style: normal;
       }
     }
 
@@ -65,8 +67,15 @@ section.contact-form{
       border-radius: 10px;
       padding: 20px 0 0 20px;
       margin: 0 20px 10px 20px;
+      font-family: dmsans;
+      min-height: 100px;
+      max-height: 100px;
+      max-width: 296px;
+      min-width: 296px;
+      resize: none;
       &::-webkit-input-placeholder{
         color: #939393;
+        font-style: normal;
       }
     }
   }

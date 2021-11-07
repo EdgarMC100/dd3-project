@@ -3,14 +3,13 @@ main{
   section{
     .section-content{
       display: flex;
-      justify-content: space-between;
     }
   }
   img.house-image{
-    // max-width: 704px;
     height: auto;
     width: 704px;
     border-radius: 0 57px 0 0;
+    margin-right: 23px;
   }
   hr{
     width: 169px;

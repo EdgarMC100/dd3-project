@@ -5,15 +5,15 @@ import '@styles/Main.scss'
 import Details from '../components/Details';
 import HouseListing from '../components/HouseListing';
 
+
+
 const Main = ({houseDetail, houses,houseShownedIndex}) => {
-  console.log(houses)
-  console.log(houseDetail)
   return (
     <div className="wrapper">
       <main>
           <section>
             <div className="section-content">
-            <img className="house-image" src={houseDetail.src} alt="" />
+              <img className="house-image" src={houseDetail.src} alt="" />
               <ContactForm />
             </div>
           </section>
