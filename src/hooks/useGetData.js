@@ -5,17 +5,20 @@ console.log(API)
 
 const useGetData = (type) => {
   const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true)
   useEffect( () => {
     fetch(API+`/${type}/properties`)
     .then(response => {
       return response.json()
     })
     .then(data => {
-        return setData(data)
-      }
-    )
+      setTimeout(()=>{
+        setLoading(false)
+        setData(data)
+      },2000)
+    })
   },[])
-  return data;
+  return { data, loading};
 }
 
 export default useGetData;

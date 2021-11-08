@@ -8,7 +8,7 @@ import { useEffect } from 'react/cjs/react.development';
 
 const App = () => {
   const [ type, setType ] = useState('buy')
-  const data = useGetData(type);
+  const {data, loading} = useGetData(type);
   let houseDetail = {}
   let houseShownedIndex = 0
   data.map((house,index) => {
@@ -23,10 +23,11 @@ const App = () => {
     console.log(newType)
   })
 
+  useEffect(()=>{},[type])
   return (
     <div>
-      <Header name={houseDetail.name} cost={houseDetail.cost}/>
-      <Main houseDetail={houseDetail} houses={data} houseShownedIndex={houseShownedIndex} changeState={changeState} type={type}/>
+      <Header name={houseDetail.name} cost={houseDetail.cost} loading={loading}/>
+      <Main houseDetail={houseDetail} houses={data} houseShownedIndex={houseShownedIndex} changeState={changeState} type={type} loading={loading}/>
       <Footer/>
     </div>
   );

@@ -3,8 +3,9 @@ import Card from './Card';
 import search from '@images/search.svg'
 import arrows from '@images/arrows.svg'
 import '@styles/HouseListing.scss'
+import { ShimmerThumbnail } from 'react-shimmer-effects';
 
-const HouseListing = ({ houses, houseShownedIndex, type, changeState}) => {
+const HouseListing = ({ houses, houseShownedIndex, type, changeState, loading}) => {
   const [ matchedHouses, setMatchedHouses] = useState([])
   let matchedHousesFiltered = []
 
@@ -52,7 +53,15 @@ const HouseListing = ({ houses, houseShownedIndex, type, changeState}) => {
           </div>
         </div>
         <div className="cards">
-        {!matchedHouses.length ? houses.map((house, index) => {
+        {loading ?
+          [1,2,3,4].map((_,index)=>{
+            return (
+              <div style={{height: '100%'}} key={index}>
+                <ShimmerThumbnail height={418} width={336}/>
+              </div>
+            )
+          })
+        :!matchedHouses.length ? houses.map((house, index) => {
           return (
             <div key={house.name+index}>
               <Card house={house} key={house.name+index}/>

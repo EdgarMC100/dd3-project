@@ -3,22 +3,29 @@ import ContactForm from '../components/ContactForm';
 import '@styles/Main.scss'
 import Details from '../components/Details';
 import HouseListing from '../components/HouseListing';
+import { ShimmerThumbnail } from 'react-shimmer-effects';
 
 
 
-const Main = ({ houseDetail, houses, houseShownedIndex, type, changeState}) => {
+const Main = ({ houseDetail, houses, houseShownedIndex, type, changeState, loading}) => {
+  const shimmerContent = {
+    width: '100%', marginRight: '23px', borderRadius: '0 57px 0 0', overflow:'hidden', height: 'auto'
+  }
   return (
     <div className="wrapper">
       <main>
           <section>
             <div className="section-content">
-              <img className="house-image" src={houseDetail.src} alt="" />
+              {loading ? <div style={shimmerContent}>
+                <ShimmerThumbnail card height={520} rounded={true}/></div>
+                : <img className="house-image" src={houseDetail.src} alt="" />
+              }
               <ContactForm />
             </div>
           </section>
-          <Details houseDetail={houseDetail}/>
+          <Details houseDetail={houseDetail} loading={loading}/>
           <hr />
-        <HouseListing houses={houses} houseShownedIndex={houseShownedIndex} changeState={changeState} type={type}/>
+        <HouseListing houses={houses} houseShownedIndex={houseShownedIndex} changeState={changeState} type={type} loading={loading}/>
       </main>
     </div>
 
