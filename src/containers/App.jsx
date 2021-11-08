@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '@styles/App.scss'
 import Header from './Header';
 import Main from './Main';
 import Footer from './Footer';
 import useGetData from '../hooks/useGetData';
-import { useEffect } from 'react/cjs/react.development';
 
 const App = () => {
   const [ type, setType ] = useState('buy')
