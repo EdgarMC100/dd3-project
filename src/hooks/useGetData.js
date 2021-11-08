@@ -3,10 +3,10 @@ import { useState, useEffect } from 'react'
 const API = process.env.API;
 console.log(API)
 
-const useGetData = () => {
+const useGetData = (type) => {
   const [data, setData] = useState([]);
   useEffect( () => {
-    fetch(API+'/buy/properties')
+    fetch(API+`/${type}/properties`)
     .then(response => {
       return response.json()
     })

@@ -17,7 +17,7 @@ const ContactForm = () => {
         <input type="text" placeholder="Name"/>
         <input type="phone" placeholder="Phone"/>
         <input type="email" placeholder="Email"/>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Hello, I am interested in..." maxlength="200"></textarea>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Hello, I am interested in..." maxLength="200"></textarea>
         <Button type="secondary" width="large" height="height-lg" label="Learn more"/>
       </form>
     </section>

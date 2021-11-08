@@ -5,7 +5,7 @@ const Button = (props) => {
   const className = `button ${props.type} ${props.width} ${props.height}`
   return (
     <button className={className}>
-      {props.label}<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+      {props.label}<i className="fa fa-long-arrow-right" aria-hidden="true"></i>
     </button>
   );
 }

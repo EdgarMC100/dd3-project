@@ -7,10 +7,10 @@ const FooterLinks = () => {
       <h3>Column Heading</h3>
       <nav>
         <ul>
-          <li>Links goes here</li>
-          <li>Links goes here</li>
-          <li>Links goes here</li>
-          <li>Links goes here</li>
+          <li key={'first'}>Links goes here</li>
+          <li key={'second'}>Links goes here</li>
+          <li key={'third'}>Links goes here</li>
+          <li key={'forth'}>Links goes here</li>
         </ul>
       </nav>
     </div>
