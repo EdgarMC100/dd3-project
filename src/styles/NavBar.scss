@@ -6,6 +6,9 @@
   .nav-content{
     display: flex;
     flex-direction: row;
+    .button{
+      display: none;
+    }
     nav{
       color: white;
       ul{
@@ -13,9 +16,26 @@
         display: flex;
         li{
           margin-right:60px;
+          &:last-child{
+            margin-right: 0;
+          }
         }
       }
     }
   }
+}
 
+@media screen and (min-width: 1024px){
+  .nav-bar{
+    .nav-content{
+      nav{
+        ul{
+          margin-right: 60px;
+        }
+      }
+      .button{
+        display: inline-block;
+      }
+    }
+  }
 }

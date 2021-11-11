@@ -5,8 +5,6 @@ import Details from '../components/Details';
 import HouseListing from '../components/HouseListing';
 import { ShimmerThumbnail } from 'react-shimmer-effects';
 
-
-
 const Main = ({ houseDetail, houses, houseShownedIndex, type, changeState, loading}) => {
   const shimmerContent = {
     width: '100%', marginRight: '23px', borderRadius: '0 57px 0 0', overflow:'hidden', height: 'auto'
@@ -18,12 +16,16 @@ const Main = ({ houseDetail, houses, houseShownedIndex, type, changeState, loadi
             <div className="section-content">
               {loading ? <div style={shimmerContent}>
                 <ShimmerThumbnail card height={520} rounded={true}/></div>
-                : <img className="house-image" src={houseDetail.src} alt="" />
+                : <div className="img-content"><img className="house-image" src={houseDetail.src} alt="" /></div>
               }
               <ContactForm />
+              <div style={{ width: 'auto' }}>
+
+              </div>
+              <Details houseDetail={houseDetail} loading={loading} />
             </div>
           </section>
-          <Details houseDetail={houseDetail} loading={loading}/>
+
           <hr />
         <HouseListing houses={houses} houseShownedIndex={houseShownedIndex} changeState={changeState} type={type} loading={loading}/>
       </main>

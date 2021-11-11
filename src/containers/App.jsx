@@ -7,7 +7,7 @@ import useGetData from '../hooks/useGetData';
 
 const App = () => {
   const [ type, setType ] = useState('buy')
-  const {data, loading} = useGetData(type);
+  const { data, loading } = useGetData(type);
   let houseDetail = {}
   let houseShownedIndex = 0
   data.map((house,index) => {
