@@ -12,9 +12,9 @@ section.contact-form{
   grid-row-start: 2;
   grid-row-end: 3;
   grid-column-start: 1;
-  grid-column-end: 2;
-  margin-top: 26px;
-  margin-right: 20px;
+  grid-column-end: -1;
+  // margin-top: 26px;
+  // margin-right: 20px;
   .agent{
     width: 296px;
     height: 70px;
@@ -86,13 +86,15 @@ section.contact-form{
   }
 }
 
-// @media screen and (min-width: 1024px){
-//   section.contac-form{
-//     .agent .action{
-//       width: 100%;
-//     }
-//   }
-// }
+@media screen and (min-width: 768px){
+  section.contact-form{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-right: 20px;
+  }
+}
 
 @media screen and (min-width: 1200px){
   section.contact-form{
@@ -103,75 +105,5 @@ section.contact-form{
     grid-column-start: 2;
     grid-column-end: -1;
     margin-left: 26px;
-    .agent{
-      width: 296px;
-      height: 70px;
-      background-color: #F5F5F5;
-      border: none;
-      border-radius: 10px;
-      display: flex;
-      flex-wrap: nowrap;
-      margin: 20px 20px 20px 20px;
-      img{
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        margin: 15px 10px 15px 17px;
-      }
-      .contact-information{
-        p{
-          text-align: left;
-          font-size: 15px;
-          line-height: 19.53px;
-          margin-bottom: 0px;
-        }
-        a{
-          font-size: 13px;
-          text-decoration: none;
-          color: #FFAC12;
-          font-weight: 700;
-          line-height: 16.93px;
-        }
-      }
-    }
-    form{
-      display: flex;
-      flex-direction: column;
-      input{
-        width: 296px;
-        height: 60px;
-        padding: 20px 0 20px 20px;
-        border: 1px solid #EBEBEB;
-        box-sizing: border-box;
-        border-radius: 10px;
-        margin: 0 20px 10px 20px;
-        font-family: dmsans;
-         &::-webkit-input-placeholder{
-          color: #939393;
-          font-style: normal;
-        }
-      }
-
-      textarea{
-        width: 296px;
-        height: 100px;
-        border: 1px solid #EBEBEB;
-        box-sizing: border-box;
-        border-radius: 10px;
-        padding: 20px 0 0 20px;
-        margin: 0 20px 10px 20px;
-        font-family: dmsans;
-        min-height: 100px;
-        max-height: 100px;
-        max-width: 296px;
-        min-width: 296px;
-        resize: none;
-        &::-webkit-input-placeholder{
-          color: #939393;
-          font-style: normal;
-        }
-      }
-    }
   }
-
 }

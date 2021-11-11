@@ -7,11 +7,11 @@ section.details{
   border: none;
   border-radius: 25px;
   // margin-top: 25px;
-  grid-column-start: 2;
+  grid-column-start: 1;
   grid-column-end: -1;
-  grid-row-start: 2;
-  grid-row-end: -1;
-  margin: 25px auto;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  // margin-top: 25px;
   table{
     width: 100%;
     border-collapse: collapse;
@@ -41,6 +41,15 @@ section.details{
         }
       }
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  section.details{
+    grid-column-start: 2;
+    grid-column-end: -1;
+    grid-row-start: 2;
+    grid-row-end: -1;
   }
 }
 

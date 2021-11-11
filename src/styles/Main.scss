@@ -4,16 +4,18 @@ main{
     .section-content{
       display: grid;
       grid-template-columns: 1fr 2fr;
-      grid-template-rows: 520px 520px;
+      grid-template-rows: 520px 520px 147px;
+      gap: 20px;
       div.img-content{
         grid-row-start: 1;
-        grid-row-end: 2;
+        grid-row-end: 1;
         grid-column-start: 1;
         grid-column-end:-1;
         img.house-image{
           height: 100%;
           width: 100%;
           border-radius: 0 57px 0 0;
+          // background-position: center;
         }
       }
     }
@@ -29,14 +31,15 @@ main{
 }
 
 
-// @media screen and (min-width: 1024px){
-//   main{
-//     section
-//       .section-content{
-//         grid-template-columns: 1fr 1fr;
-//       }
-//   }
-// }
+@media screen and (min-width: 768px){
+  main{
+    section
+      .section-content{
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 520px 520px;
+      }
+  }
+}
 
 @media screen and (min-width: 1200px) {
   main{

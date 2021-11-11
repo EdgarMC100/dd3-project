@@ -12,8 +12,11 @@ section.house-listing{
     }
     .inputs{
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       flex-wrap: nowrap;
+      .searcher:nth-child(2){
+        margin-top: 10px;
+      }
     }
     .searcher{
       position: relative;
@@ -49,6 +52,18 @@ section.house-listing{
   }
 }
 
+@media screen and (min-width: 768px) {
+  section.house-listing{
+    div.filters{
+      .inputs{
+        flex-direction: row;
+        .searcher:nth-child(2){
+          margin-top: 0px;
+        }
+      }
+    }
+  }
+}
 @media screen and (min-width: 1024px) {
   section.house-listing{
     div.filters{

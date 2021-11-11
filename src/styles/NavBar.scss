@@ -10,6 +10,7 @@
       display: none;
     }
     nav{
+      display: none;
       color: white;
       ul{
         list-style: none;
@@ -25,6 +26,15 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .nav-bar{
+    .nav-content{
+      nav{
+        display: block;
+      }
+    }
+  }
+}
 @media screen and (min-width: 1024px){
   .nav-bar{
     .nav-content{
