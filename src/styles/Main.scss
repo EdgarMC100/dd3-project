@@ -4,7 +4,7 @@ main{
     .section-content{
       display: grid;
       grid-template-columns: 1fr 2fr;
-      grid-template-rows: 520px 520px 147px;
+      grid-template-rows: 300px 520px 147px;
       gap: 20px;
       div.img-content{
         grid-row-start: 1;
@@ -15,7 +15,6 @@ main{
           height: 100%;
           width: 100%;
           border-radius: 0 57px 0 0;
-          // background-position: center;
         }
       }
     }
