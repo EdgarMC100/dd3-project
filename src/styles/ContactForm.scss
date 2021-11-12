@@ -13,17 +13,18 @@ section.contact-form{
   grid-row-end: 3;
   grid-column-start: 1;
   grid-column-end: -1;
-  // margin-top: 26px;
-  // margin-right: 20px;
+  padding: 0 20px;
+  box-sizing: border-box;
   .agent{
-    width: 296px;
+    width: 100%;
+    max-width: 296px;
     height: 70px;
     background-color: #F5F5F5;
     border: none;
     border-radius: 10px;
     display: flex;
     flex-wrap: nowrap;
-    margin: 20px 20px 20px 20px;
+    margin: 20px 0;
     img{
       width: 40px;
       height: 40px;
@@ -49,14 +50,22 @@ section.contact-form{
   form{
     display: flex;
     flex-direction: column;
+    width: 100%;
+    max-width: 296px;
+    button{
+      margin-left: 0;
+      max-width: 296px;
+      width: 100%;
+    }
     input{
-      width: 296px;
+      width: 100%;
+      max-width: 296px;
       height: 60px;
       padding: 20px 0 20px 20px;
       border: 1px solid #EBEBEB;
       box-sizing: border-box;
       border-radius: 10px;
-      margin: 0 20px 10px 20px;
+      margin-bottom: 10px;
       font-family: dmsans;
        &::-webkit-input-placeholder{
         color: #939393;
@@ -65,18 +74,17 @@ section.contact-form{
     }
 
     textarea{
-      width: 296px;
+      width: 100%;
       height: 100px;
       border: 1px solid #EBEBEB;
       box-sizing: border-box;
       border-radius: 10px;
       padding: 20px 0 0 20px;
-      margin: 0 20px 10px 20px;
+      margin-bottom: 10px;
       font-family: dmsans;
       min-height: 100px;
       max-height: 100px;
       max-width: 296px;
-      min-width: 296px;
       resize: none;
       &::-webkit-input-placeholder{
         color: #939393;
