@@ -14,7 +14,7 @@ const Main = ({ houseDetail, houses, houseShownedIndex, type, changeState, loadi
       <main>
           <section>
             <div className="section-content">
-              {loading ? <div style={shimmerContent}>
+              {loading ? <div style={shimmerContent} className="shipper">
                 <ShimmerThumbnail card height={520} rounded={true}/></div>
                 : <div className="img-content"><img className="house-image" src={houseDetail.src} alt="" /></div>
               }

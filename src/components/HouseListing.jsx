@@ -38,7 +38,7 @@ const HouseListing = ({ houses, houseShownedIndex, type, changeState, loading}) 
     type == 'rent' ? changeState('buy'): changeState('rent')
   }
   return (
-      <section className="house-listing">
+      <section id="houses" className="house-listing">
         <div className="filters">
           <h2>Similar listings</h2>
           <div className="inputs">

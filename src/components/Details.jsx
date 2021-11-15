@@ -12,7 +12,7 @@ const Details = ({houseDetail, loading}) => {
     width: '100%', borderRadius: '25px', overflow:'hidden'
   }
   return (
-    <section className="details">
+    <section id="details" className="details">
 
       {loading ? <div style={shimmerContent}><ShimmerThumbnail card height={147} width={704} /></div> :
         <table>

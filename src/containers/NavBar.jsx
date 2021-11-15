@@ -2,6 +2,7 @@ import React from 'react'
 import Button from '../components/Button'
 import Logo from '../components/Logo'
 import '@styles/NavBar.scss'
+import HamburguerBar from '../components/HamburguerBar'
 
 const NavBar = () => {
   return (
@@ -18,6 +19,7 @@ const NavBar = () => {
             </ul>
           </nav>
           <Button width="small" height="height-sm" label="Work with us"/>
+          <HamburguerBar/>
         </div>
       </div>
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import avatar from '@images/avatar.png';
 import '@styles/ContactForm.scss'
-import Button from '../components/Button'
+import Button from './Button'
 
 const ContactForm = () => {
   return (

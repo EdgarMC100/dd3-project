@@ -24,7 +24,7 @@ const App = () => {
 
   useEffect(()=>{},[type])
   return (
-    <div>
+    <div id="home">
       <Header name={houseDetail.name} cost={houseDetail.cost} loading={loading}/>
       <Main houseDetail={houseDetail} houses={data} houseShownedIndex={houseShownedIndex} changeState={changeState} type={type} loading={loading}/>
       <Footer/>

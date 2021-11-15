@@ -3,18 +3,20 @@ main{
   section{
     .section-content{
       display: grid;
-      grid-template-columns: 1fr 2fr;
+      grid-template-columns: 1fr 1fr;
       grid-template-rows: 300px 520px 147px;
       gap: 20px;
-      div.img-content{
+      div.img-content, div.shipper{
         grid-row-start: 1;
         grid-row-end: 1;
         grid-column-start: 1;
-        grid-column-end:-1;
+        grid-column-end: -1;
         img.house-image{
           height: 100%;
           width: 100%;
-          border-radius: 0 57px 0 0;
+          // border-radius: 0 57px 0 0;
+          background-size: auto;
+
         }
       }
     }
@@ -36,7 +38,18 @@ main{
       .section-content{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 520px 520px;
+        div.img-content, div.shipper{
+          grid-row-start: 1;
+          grid-row-end: 2;
+          grid-column-start: 1;
+          grid-column-end: 3;
+          // img.house-image{
+          //   height: 100%;
+          //   width: 100%;
+          // }
+        }
       }
+
   }
 }
 
@@ -47,16 +60,15 @@ main{
         display: grid;
         grid-template-columns: 704px 336px;
         grid-template-rows: 520px 147px;
-        div.img-content{
+        div.img-content, div.shipper {
           grid-row-start: 1;
           grid-row-end: 2;
           grid-column-start: 1;
           grid-column-end:2;
-          img.house-image{
-            height: 100%;
-            width: 100%;
-            border-radius: 0 57px 0 0;
-          }
+          // img.house-image{
+          //   height: 100%;
+          //   width: 100%;
+          // }
         }
       }
     }

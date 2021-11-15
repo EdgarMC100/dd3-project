@@ -1,0 +1,15 @@
+.hamburguer-menu{
+  display: inline-block;
+  a{
+    color: white;
+    i:hover{
+      color: rgba($color: #FFFFFF, $alpha: .4);
+    }
+  }
+}
+
+@media screen and (min-width:780px) {
+  .hamburguer-menu{
+    display: none;
+  }
+}
