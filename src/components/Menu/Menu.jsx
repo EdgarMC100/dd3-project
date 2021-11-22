@@ -7,6 +7,7 @@ const Menu = ({setShow}) => {
   const handleHiddeMenu = () => {
     const $menu = document.getElementsByClassName('menu')[0];
     $menu.classList.add('menu-closed')
+
     $body.style.overflowY = 'visible'
     setTimeout(() => {
       setShow(false)

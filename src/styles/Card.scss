@@ -1,12 +1,8 @@
 div.card{
+  border-radius: 25px;
+  max-width: 336px;
   width: 336px;
   height: 418px;
-  background: #FFFFFF;
-  border: none;
-  border-radius: 25px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   margin: 12px;
   img.card-image{
     width: 336px;
@@ -49,5 +45,13 @@ div.card{
 
       }
     }
+  }
+}
+
+@media screen and (min-width: 768px){
+  div.card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 }
