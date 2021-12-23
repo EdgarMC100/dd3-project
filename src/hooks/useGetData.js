@@ -15,10 +15,10 @@ const useGetData = (type) => {
       setTimeout(()=>{
         setLoading(false)
         setData(data)
-      },1000)
+      },2000)
     })
-  },[])
-  return { data, loading};
+  },[type])
+  return { data, loading, setLoading};
 }
 
 export default useGetData;

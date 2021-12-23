@@ -3,7 +3,7 @@ import NavBar from '../containers/NavBar'
 import TitleBar from '../components/TitleBar'
 import '@styles/Header.scss'
 
-const Header = ({name, cost, loading}) => {
+const Header = ({name, cost, loading, type}) => {
   return (
     <div className="header">
         <div className="header-content">
@@ -13,7 +13,7 @@ const Header = ({name, cost, loading}) => {
             </div>
             <hr className="break-line"></hr>
             <div className="wrapper">
-              <TitleBar name={name} cost={cost} loading={loading}/>
+              <TitleBar name={name} cost={cost} loading={loading} type={type}/>
             </div>
           </header>
       </div>

@@ -7,7 +7,7 @@ import useGetData from '../hooks/useGetData';
 
 const App = () => {
   const [ type, setType ] = useState('buy')
-  const { data, loading } = useGetData(type);
+  const { data, loading, setLoading} = useGetData(type);
   let houseDetail = {}
   let houseShownedIndex = 0
   data.map((house,index) => {
@@ -17,15 +17,14 @@ const App = () => {
     }
   })
 
-  const changeState = (newType => {
+  const changeState = (newType) => {
     setType(newType)
-    console.log(newType)
-  })
+    setLoading(true)
+  }
 
-  useEffect(()=>{},[type])
   return (
     <div id="home">
-      <Header name={houseDetail.name} cost={houseDetail.cost} loading={loading}/>
+      <Header name={houseDetail.name} cost={houseDetail.cost} loading={loading} type={type}/>
       <Main houseDetail={houseDetail} houses={data} houseShownedIndex={houseShownedIndex} changeState={changeState} type={type} loading={loading}/>
       <Footer/>
     </div>
